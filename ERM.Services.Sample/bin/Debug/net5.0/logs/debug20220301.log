@@ -1,0 +1,187 @@
+2022-03-01 08:43:50.873 +07:00 [INF] HTTP GET / responded 404 in 29.3444 ms
+2022-03-01 08:43:51.051 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 0.9854 ms
+2022-03-01 09:25:57.515 +07:00 [INF] HTTP GET / responded 404 in 25.4074 ms
+2022-03-01 09:27:22.082 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 12174.9345 ms
+2022-03-01 09:27:22.082 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 12034.5459 ms
+2022-03-01 09:28:55.282 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 310.5253 ms
+2022-03-01 09:28:55.285 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 223.9627 ms
+2022-03-01 09:34:06.203 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method533(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-01 09:34:06.203 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method533(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-01 09:34:06.268 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 477.8888 ms
+2022-03-01 09:34:06.268 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 328.1051 ms
+2022-03-01 09:36:09.752 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method533(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-01 09:36:09.759 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 204.8943 ms
+2022-03-01 09:36:42.362 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method533(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-01 09:36:42.370 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 206.6153 ms
+2022-03-01 09:36:43.517 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method533(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-01 09:36:43.524 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 234.5364 ms
+2022-03-01 09:37:09.598 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method533(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-01 09:37:09.603 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 5451.3054 ms
+2022-03-01 09:39:34.610 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 3713.9557 ms
+2022-03-01 09:39:34.613 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 10011.0255 ms
+2022-03-01 11:45:15.614 +07:00 [INF] HTTP GET / responded 404 in 32.2950 ms
+2022-03-01 11:45:15.837 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 2.3167 ms
+2022-03-01 12:03:20.143 +07:00 [ERR] Exception while connecting
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.ConnectorPool.<>c__DisplayClass38_0.<<Rent>g__RentAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Npgsql.NpgsqlConnection.<>c__DisplayClass41_0.<<Open>g__OpenAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Npgsql.NpgsqlConnection.Open()
+   at LinqToDB.Async.AsyncDbConnection.Open()
+   at LinqToDB.Data.DataConnection.EnsureConnection(Boolean connect)
+   at LinqToDB.Data.DataConnection.get_Connection()
+   at LinqToDB.Data.DataConnection.CreateCommand()
+   at LinqToDB.Data.DataConnection.get_Command()
+   at LinqToDB.DataProvider.DataProviderBase.InitCommand(DataConnection dataConnection, CommandType commandType, String commandText, DataParameter[] parameters, Boolean withParameters)
+   at LinqToDB.Data.DataConnection.InitCommand(CommandType commandType, String sql, DataParameter[] parameters, IReadOnlyCollection`1 queryHints, Boolean withParameters)
+   at LinqToDB.Data.CommandInfo.Execute()
+   at LinqToDB.Data.DataConnectionExtensions.Execute(DataConnection connection, String sql)
+   at ERM.DAL.EntityCore.DataContext.DataConnectionExtensions.CreateDb(DataConnection dataCnn, String dbName, String dbPath)
+   at ERM.DAL.EntityCore.DataContext.DbContext..ctor(IConnection connection)
+   at ERM.DAL.EntityCore.EFDbContext..ctor(IConnection connection)
+   at ERM.DAL.EntityCore.EFDALContainer.Constructor(IConnection connetion, Boolean addToStore)
+   at ctor(Object )
+   at Fasterflect.ConstructorExtensions.CreateInstance(Type type, Object[] parameters)
+   at ERM.DAL.Base.DALContainerManager.ContractorDAL(IConnection connetion, Boolean addToStore, Type type, Type sysType)
+   at ERM.DAL.Base.DALContainerManager.CreateDALContainer(IConnection connetion, Boolean addToStore)
+   at ERM.DAL.LVRequestContext.Init(MessageBody request, Boolean createDbContext)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method533(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-01 12:03:20.360 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 44419.7371 ms
+2022-03-01 12:08:53.767 +07:00 [INF] HTTP GET /api/Sample/exec responded 405 in 6.3035 ms
+2022-03-01 12:08:53.808 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 0.2698 ms
+2022-03-01 13:59:41.947 +07:00 [INF] HTTP GET / responded 404 in 33.7245 ms
+2022-03-01 13:59:42.128 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.1611 ms
+2022-03-01 13:59:53.630 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 0.1885 ms
+2022-03-01 15:23:21.571 +07:00 [INF] HTTP GET / responded 404 in 31.9642 ms
+2022-03-01 15:23:22.050 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.1120 ms
+2022-03-01 15:30:42.539 +07:00 [INF] HTTP GET / responded 404 in 35.3503 ms
+2022-03-01 15:30:42.800 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.5078 ms
+2022-03-01 15:31:11.470 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method533(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-01 15:31:11.735 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 2041.6317 ms
+2022-03-01 15:32:39.267 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 6876.1892 ms
+2022-03-01 15:34:27.145 +07:00 [INF] HTTP GET / responded 404 in 4.3978 ms
+2022-03-01 15:57:49.199 +07:00 [INF] HTTP GET / responded 404 in 34.8374 ms
+2022-03-01 15:57:49.484 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 2.0524 ms
+2022-03-01 15:59:17.886 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 3239.9243 ms
+2022-03-01 16:01:35.160 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 939.4693 ms
+2022-03-01 16:06:19.501 +07:00 [INF] HTTP GET / responded 404 in 35.1940 ms
+2022-03-01 16:06:19.704 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.0143 ms
+2022-03-01 16:07:21.435 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 3881.2978 ms
+2022-03-01 16:11:38.877 +07:00 [INF] HTTP GET / responded 404 in 25.4734 ms
+2022-03-01 16:11:39.100 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 0.8562 ms
+2022-03-01 16:12:31.756 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 3939.6626 ms
+2022-03-01 16:36:50.875 +07:00 [INF] HTTP GET / responded 404 in 32.7648 ms
+2022-03-01 16:36:51.108 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.8149 ms
+2022-03-01 16:41:06.445 +07:00 [INF] HTTP GET / responded 404 in 29.6292 ms
+2022-03-01 16:41:06.619 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 0.7955 ms
+2022-03-01 16:43:43.393 +07:00 [INF] HTTP POST /api/Sample/exec responded 404 in 58.9271 ms
+2022-03-01 16:44:13.432 +07:00 [INF] HTTP GET /api/Sample/exec responded 404 in 6.2582 ms
+2022-03-01 16:44:13.509 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 0.6114 ms
+2022-03-01 16:48:14.474 +07:00 [INF] HTTP GET / responded 404 in 33.9669 ms
+2022-03-01 16:48:14.672 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.3849 ms
+2022-03-01 16:49:32.176 +07:00 [INF] HTTP POST /api/Sample/exec responded 404 in 12.7192 ms
+2022-03-01 16:51:01.939 +07:00 [INF] HTTP GET / responded 404 in 31.4418 ms
+2022-03-01 16:51:02.159 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.0292 ms
+2022-03-01 16:59:10.558 +07:00 [INF] HTTP GET / responded 404 in 29.9187 ms
+2022-03-01 16:59:10.726 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.2115 ms
+2022-03-01 17:00:09.716 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 4913.5145 ms
+2022-03-01 17:07:48.772 +07:00 [INF] HTTP GET / responded 404 in 34.2103 ms
+2022-03-01 17:07:48.937 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.7106 ms
+2022-03-01 17:07:54.616 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 0.1934 ms
+2022-03-01 17:09:52.629 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 7872.7623 ms
+2022-03-01 17:09:52.629 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 7872.7419 ms
+2022-03-01 17:09:52.629 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 7845.4720 ms

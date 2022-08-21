@@ -1,0 +1,8 @@
+{
+  "ConnectionStrings": {
+    //"redis": "172.16.7.33:6379,password=Erm@2021,ssl=false,allowAdmin=true,abortConnect=false,defaultDatabase=0,connectTimeout=500",
+    //"redis": "210.2.89.150:446/redis,password=Erm@2021,ssl=false,allowAdmin=true,abortConnect=false,defaultDatabase=0,connectTimeout=500"
+    // "ERM_System": "Data Source=BuuNguyen;Initial Catalog=EmployeeMNG;Integrated Security=True;App=ermsql",
+    "ERM_System": "Server=BuuNguyen;Initial Catalog=EmployeeMNG;Integrated Security=True;App=ermsql"
+  }
+}

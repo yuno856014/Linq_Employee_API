@@ -1,0 +1,12 @@
+2022-03-09 08:03:13.878 +07:00 [INF] HTTP GET / responded 404 in 51.8049 ms
+2022-03-09 08:03:14.208 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 9.5721 ms
+2022-03-09 08:03:42.273 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 2849.1760 ms
+2022-03-09 08:03:42.280 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 5729.7105 ms
+2022-03-09 08:03:51.266 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 273.1779 ms
+2022-03-09 08:04:02.752 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 225.2494 ms
+2022-03-09 08:04:04.253 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 233.1375 ms
+2022-03-09 08:13:37.157 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 288.1137 ms
+2022-03-09 08:13:40.261 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 120.4904 ms
+2022-03-09 08:13:41.530 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 159.1709 ms
+2022-03-09 08:13:42.575 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 135.6648 ms
+2022-03-09 08:13:44.699 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 123.6727 ms

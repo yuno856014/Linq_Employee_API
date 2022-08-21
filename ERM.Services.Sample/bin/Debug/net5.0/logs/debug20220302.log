@@ -1,0 +1,1667 @@
+2022-03-02 10:16:31.650 +07:00 [INF] HTTP GET / responded 404 in 163.7382 ms
+2022-03-02 10:16:31.977 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 16.9918 ms
+2022-03-02 10:16:45.273 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method538(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:16:45.273 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:16:45.497 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 1045.4820 ms
+2022-03-02 10:16:45.497 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 1009.9488 ms
+2022-03-02 10:19:15.638 +07:00 [ERR] 
+
+
+2022-03-02 10:19:15.638 +07:00 [ERR] 
+erm_system
+
+2022-03-02 10:19:15.639 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'DepartmentName', table 'EmployeeMNG.dbo.Departments'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:e1afa4e9-10b9-4b7e-9cdc-100fca2e354a
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 84
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 10:19:16.115 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 20163.7638 ms
+2022-03-02 10:20:01.243 +07:00 [ERR] 
+
+
+2022-03-02 10:20:01.243 +07:00 [ERR] 
+erm_system
+
+2022-03-02 10:20:01.243 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'DepartmentName', table 'EmployeeMNG.dbo.Departments'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:e1afa4e9-10b9-4b7e-9cdc-100fca2e354a
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 84
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 10:20:01.245 +07:00 [ERR] The client has disconnected
+Microsoft.AspNetCore.Connections.ConnectionResetException: The client has disconnected
+ ---> System.Runtime.InteropServices.COMException (0x800704CD): An operation was attempted on a nonexistent network connection. (0x800704CD)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IO.AsyncIOOperation.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadBody()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadAsync(Memory`1 memory, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:01.382 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 36498.5165 ms
+2022-03-02 10:20:01.550 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 505.1935 ms
+2022-03-02 10:20:11.893 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:11.906 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 38.1156 ms
+2022-03-02 10:20:39.162 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:39.179 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 58.3942 ms
+2022-03-02 10:20:39.235 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:39.252 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 72.5919 ms
+2022-03-02 10:20:44.854 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:44.901 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:44.922 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 137.8687 ms
+2022-03-02 10:20:44.928 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 86.2385 ms
+2022-03-02 10:20:52.592 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:52.635 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:52.644 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 97.0390 ms
+2022-03-02 10:20:52.650 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 57.6999 ms
+2022-03-02 10:20:55.121 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:55.122 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:55.130 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 50.6465 ms
+2022-03-02 10:20:55.130 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 83.9022 ms
+2022-03-02 10:20:57.918 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:57.945 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method537(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 10:20:57.948 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 72.0551 ms
+2022-03-02 10:20:57.957 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 38.7832 ms
+2022-03-02 10:21:38.423 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 21163.6517 ms
+2022-03-02 10:57:49.551 +07:00 [INF] HTTP GET / responded 404 in 30.0324 ms
+2022-03-02 10:57:49.751 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 2.2064 ms
+2022-03-02 10:58:16.591 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 2619.2659 ms
+2022-03-02 10:58:48.910 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 269.1051 ms
+2022-03-02 11:00:59.637 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 288.7707 ms
+2022-03-02 11:01:44.497 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 326.9658 ms
+2022-03-02 11:03:01.439 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 517.4823 ms
+2022-03-02 11:03:21.416 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 232.4245 ms
+2022-03-02 11:03:35.114 +07:00 [ERR] DB not found
+System.IO.InvalidDataException: DB not found
+   at ERM.Service.Base.LVController.ExecAsync(MessageBody request)
+   at lambda_method533(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-03-02 11:03:35.246 +07:00 [INF] HTTP POST /api/Sample/exec responded 500 in 204.6578 ms
+2022-03-02 11:03:49.607 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 195.8216 ms
+2022-03-02 11:04:48.141 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 324.0392 ms
+2022-03-02 11:05:02.046 +07:00 [ERR] 
+
+
+2022-03-02 11:05:02.046 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:05:02.046 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Departments'. Cannot insert duplicate key in object 'dbo.Departments'. The duplicate key value is (1).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:2763155e-c9b7-429b-bf8c-150826dd1146
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 84
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:05:02.408 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 14507.3578 ms
+2022-03-02 11:05:14.363 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 258.7162 ms
+2022-03-02 11:06:31.222 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 688.8868 ms
+2022-03-02 11:06:46.907 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 618.1953 ms
+2022-03-02 11:07:09.021 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 187.6535 ms
+2022-03-02 11:07:45.331 +07:00 [ERR] 
+
+
+2022-03-02 11:07:45.332 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:07:45.332 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Departments'. Cannot insert duplicate key in object 'dbo.Departments'. The duplicate key value is (1).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:2763155e-c9b7-429b-bf8c-150826dd1146
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 84
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:07:45.424 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 9394.8632 ms
+2022-03-02 11:08:01.958 +07:00 [ERR] 
+
+
+2022-03-02 11:08:01.958 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:08:01.958 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Departments'. Cannot insert duplicate key in object 'dbo.Departments'. The duplicate key value is (1).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:2763155e-c9b7-429b-bf8c-150826dd1146
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 84
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:08:02.039 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 5146.4542 ms
+2022-03-02 11:08:44.542 +07:00 [ERR] 
+
+
+2022-03-02 11:08:44.543 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:08:44.543 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 92
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 83
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:08:44.639 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 15686.6473 ms
+2022-03-02 11:10:21.089 +07:00 [ERR] 
+
+
+2022-03-02 11:10:21.089 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:10:21.089 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:10:22.101 +07:00 [ERR] 
+
+
+2022-03-02 11:10:22.101 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:10:22.101 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:10:22.151 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 14049.5509 ms
+2022-03-02 11:10:22.170 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1315.0558 ms
+2022-03-02 11:12:39.511 +07:00 [ERR] 
+
+
+2022-03-02 11:12:39.511 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:12:39.511 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:12:41.710 +07:00 [ERR] 
+
+
+2022-03-02 11:12:41.710 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:12:41.710 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:12:41.718 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 69191.0062 ms
+2022-03-02 11:12:41.864 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 2808.6264 ms
+2022-03-02 11:12:54.063 +07:00 [ERR] 
+
+
+2022-03-02 11:12:54.063 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:12:54.063 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:12:54.260 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 479.4890 ms
+2022-03-02 11:13:26.993 +07:00 [ERR] 
+
+
+2022-03-02 11:13:26.993 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:13:26.994 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:13:27.188 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 512.9194 ms
+2022-03-02 11:14:47.898 +07:00 [ERR] 
+
+
+2022-03-02 11:14:47.898 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:14:47.898 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:14:47.967 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 338.2823 ms
+2022-03-02 11:15:05.520 +07:00 [ERR] 
+
+
+2022-03-02 11:15:05.520 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:15:05.520 +07:00 [ERR] ||
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.String.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Common.Http.LVStreamReader.ReadInt16()
+   at ERM.Business.Sample.DepartmentBusiness.GetListAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:15:05.612 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 12416.8484 ms
+2022-03-02 11:15:49.948 +07:00 [ERR] 
+
+
+2022-03-02 11:15:49.948 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:15:49.948 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:15:58.292 +07:00 [ERR] 
+
+
+2022-03-02 11:15:58.292 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:15:58.292 +07:00 [ERR] ||
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.String.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Common.Http.LVStreamReader.ReadInt16()
+   at ERM.Business.Sample.DepartmentBusiness.GetListAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:15:58.366 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 8961.6993 ms
+2022-03-02 11:15:58.375 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 8861.1027 ms
+2022-03-02 11:16:34.558 +07:00 [ERR] 
+
+
+2022-03-02 11:16:34.558 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:16:34.558 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data)
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:16:34.608 +07:00 [ERR] 
+
+
+2022-03-02 11:16:34.609 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:16:34.609 +07:00 [ERR] ||
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.String.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Common.Http.LVStreamReader.ReadInt16()
+   at ERM.Business.Sample.DepartmentBusiness.GetListAsync(LVStreamReader requestReader, LVStreamWriter responseWriter)
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:16:34.744 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 8495.0613 ms
+2022-03-02 11:16:34.757 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 8452.1382 ms
+2022-03-02 11:17:03.105 +07:00 [INF] HTTP GET / responded 404 in 38.0030 ms
+2022-03-02 11:17:03.292 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.4838 ms
+2022-03-02 11:17:45.657 +07:00 [ERR] 
+
+
+2022-03-02 11:17:45.657 +07:00 [ERR] 
+
+
+2022-03-02 11:17:45.657 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:17:45.657 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:17:45.657 +07:00 [ERR] ||
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.String.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Common.Http.LVStreamReader.ReadInt16()
+   at ERM.Business.Sample.DepartmentBusiness.GetListAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 17
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:17:45.657 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 92
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 83
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:17:46.828 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 12032.3855 ms
+2022-03-02 11:17:46.833 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 13917.0396 ms
+2022-03-02 11:22:02.874 +07:00 [INF] HTTP GET / responded 404 in 32.9080 ms
+2022-03-02 11:22:03.049 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.0368 ms
+2022-03-02 11:22:30.830 +07:00 [ERR] 
+
+
+2022-03-02 11:22:30.831 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:22:30.831 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 92
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 83
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:22:46.848 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 36363.2293 ms
+2022-03-02 11:22:46.854 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 37405.2955 ms
+2022-03-02 11:24:31.643 +07:00 [ERR] 
+
+
+2022-03-02 11:24:31.643 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:24:31.644 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 92
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 83
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:24:38.817 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 7363.3212 ms
+2022-03-02 11:24:40.913 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 9481.8161 ms
+2022-03-02 11:25:15.431 +07:00 [ERR] 
+
+
+2022-03-02 11:25:15.431 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:25:15.431 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 92
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 83
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:25:15.618 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 581.4920 ms
+2022-03-02 11:25:15.667 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 659.3013 ms
+2022-03-02 11:25:58.788 +07:00 [ERR] 
+
+
+2022-03-02 11:25:58.788 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:25:58.788 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 92
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 83
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:25:58.906 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 369.2107 ms
+2022-03-02 11:25:58.924 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 463.9606 ms
+2022-03-02 11:27:24.817 +07:00 [ERR] 
+
+
+2022-03-02 11:27:24.829 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:27:24.829 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 92
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 83
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:27:25.014 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 509.7794 ms
+2022-03-02 11:27:25.031 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 579.8407 ms
+2022-03-02 11:31:06.648 +07:00 [ERR] 
+
+
+2022-03-02 11:31:06.649 +07:00 [ERR] 
+erm_system
+
+2022-03-02 11:31:06.649 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ERM.Model.Sample.Models.Department' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Business.Sample.SampleBusiness.AddAsyncLogic(String data) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 92
+   at ERM.Business.Sample.SampleBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\SampleBusiness.cs:line 83
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 11:31:06.965 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 846.4210 ms
+2022-03-02 11:31:06.998 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 958.3714 ms
+2022-03-02 13:22:42.078 +07:00 [INF] HTTP GET / responded 404 in 91.9274 ms
+2022-03-02 13:22:42.492 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.4566 ms
+2022-03-02 13:29:07.392 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 9269.4146 ms
+2022-03-02 13:29:07.392 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 8565.1969 ms
+2022-03-02 13:29:12.730 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 107.6845 ms
+2022-03-02 13:29:14.978 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 135.7172 ms
+2022-03-02 13:29:30.943 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 205.0554 ms
+2022-03-02 13:29:30.998 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 109.0377 ms
+2022-03-02 13:29:49.615 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 262.1589 ms
+2022-03-02 13:29:49.626 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 201.2916 ms
+2022-03-02 13:30:10.918 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 185.3031 ms
+2022-03-02 13:30:11.054 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 107.5120 ms
+2022-03-02 13:30:15.201 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 112.5112 ms
+2022-03-02 13:30:30.027 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 247.6052 ms
+2022-03-02 13:30:30.027 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 171.9077 ms
+2022-03-02 13:30:41.289 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 311.3474 ms
+2022-03-02 13:30:41.289 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 370.7799 ms
+2022-03-02 13:31:26.420 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 189.1797 ms
+2022-03-02 13:31:26.735 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 153.0237 ms
+2022-03-02 13:31:40.673 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 259.1964 ms
+2022-03-02 13:31:40.749 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 142.8671 ms
+2022-03-02 13:31:59.367 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 368.2800 ms
+2022-03-02 13:31:59.387 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 298.0789 ms
+2022-03-02 13:32:22.423 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 176.1841 ms
+2022-03-02 13:32:22.439 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 252.1523 ms
+2022-03-02 13:32:37.638 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 359.3606 ms
+2022-03-02 13:32:37.651 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 334.3883 ms
+2022-03-02 13:32:39.332 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 153.4293 ms
+2022-03-02 13:32:40.277 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 155.2513 ms
+2022-03-02 13:32:44.267 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 560.5804 ms
+2022-03-02 13:32:44.299 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 499.1315 ms
+2022-03-02 13:32:54.230 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 363.8236 ms
+2022-03-02 13:32:54.379 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 417.9863 ms
+2022-03-02 13:33:25.097 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 432.9673 ms
+2022-03-02 13:33:25.384 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 286.7349 ms
+2022-03-02 13:33:30.478 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 221.9217 ms
+2022-03-02 13:33:30.480 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 142.7710 ms
+2022-03-02 13:33:36.001 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 212.8070 ms
+2022-03-02 13:33:36.951 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 291.1156 ms
+2022-03-02 13:34:29.998 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 156.5104 ms
+2022-03-02 13:34:30.344 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 145.4280 ms
+2022-03-02 13:36:54.454 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 273.0501 ms
+2022-03-02 13:36:54.454 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 336.2687 ms
+2022-03-02 13:37:16.033 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 173.2099 ms
+2022-03-02 14:48:00.039 +07:00 [INF] HTTP GET / responded 404 in 81.8380 ms
+2022-03-02 14:48:00.449 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 3.7237 ms
+2022-03-02 14:48:05.195 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 5248.1394 ms
+2022-03-02 14:48:17.242 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 289.0085 ms
+2022-03-02 14:48:47.322 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 20730.9769 ms
+2022-03-02 14:48:59.508 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 553.3441 ms
+2022-03-02 15:00:26.213 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1861.8934 ms
+2022-03-02 15:00:29.728 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 265.0159 ms
+2022-03-02 15:00:56.172 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 14177.8447 ms
+2022-03-02 15:01:01.308 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 240.9061 ms
+2022-03-02 15:01:04.912 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 272.5305 ms
+2022-03-02 15:01:19.249 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 2832.1645 ms
+2022-03-02 15:01:27.942 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 268.6293 ms
+2022-03-02 15:07:04.175 +07:00 [INF] HTTP GET / responded 404 in 31.1572 ms
+2022-03-02 15:07:04.483 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.8899 ms
+2022-03-02 15:08:02.513 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1397.5452 ms
+2022-03-02 15:08:02.525 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 5770.8525 ms
+2022-03-02 15:08:10.748 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 301.8381 ms
+2022-03-02 15:08:11.537 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 181.0209 ms
+2022-03-02 15:08:12.919 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 122.7138 ms
+2022-03-02 15:08:13.244 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 269.6648 ms
+2022-03-02 15:08:13.320 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 174.8809 ms
+2022-03-02 15:08:14.008 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 129.5123 ms
+2022-03-02 15:08:14.410 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 117.8901 ms
+2022-03-02 15:08:14.787 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 180.4898 ms
+2022-03-02 15:08:15.151 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 142.9502 ms
+2022-03-02 15:08:15.622 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 201.3302 ms
+2022-03-02 15:08:21.509 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 801.5234 ms
+2022-03-02 15:08:21.509 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 629.9270 ms
+2022-03-02 15:08:21.594 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 886.0348 ms
+2022-03-02 15:08:21.594 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 886.1571 ms
+2022-03-02 15:08:21.594 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 886.3870 ms
+2022-03-02 15:08:21.703 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 991.3971 ms
+2022-03-02 15:08:21.722 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1014.1047 ms
+2022-03-02 15:09:01.614 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 385.4233 ms
+2022-03-02 15:09:01.614 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 245.5398 ms
+2022-03-02 15:09:06.756 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 613.6193 ms
+2022-03-02 15:09:11.990 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 395.8823 ms
+2022-03-02 15:09:12.918 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 173.9633 ms
+2022-03-02 15:09:14.248 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 236.6153 ms
+2022-03-02 15:09:14.290 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 105.5170 ms
+2022-03-02 15:09:14.454 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 98.8370 ms
+2022-03-02 15:09:14.757 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 241.6209 ms
+2022-03-02 15:09:14.963 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 276.8718 ms
+2022-03-02 15:09:15.311 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 489.7965 ms
+2022-03-02 15:09:15.668 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 696.7292 ms
+2022-03-02 15:09:15.734 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 611.6062 ms
+2022-03-02 15:09:15.925 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 617.1361 ms
+2022-03-02 15:09:20.992 +07:00 [ERR] 
+
+
+2022-03-02 15:09:20.993 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:09:20.993 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Departments'. Cannot insert duplicate key in object 'dbo.Departments'. The duplicate key value is (3).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:3950d515-0c09-4281-b748-da7d5fad008f
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.DepartmentBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 38
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:09:21.369 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1388.6619 ms
+2022-03-02 15:09:35.048 +07:00 [ERR] 
+
+
+2022-03-02 15:09:35.048 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:09:35.048 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Departments'. Cannot insert duplicate key in object 'dbo.Departments'. The duplicate key value is (6).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:3950d515-0c09-4281-b748-da7d5fad008f
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.DepartmentBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 38
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:09:35.151 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 253.5137 ms
+2022-03-02 15:09:38.406 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 172.4924 ms
+2022-03-02 15:09:40.021 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 364.8833 ms
+2022-03-02 15:09:42.802 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 215.6854 ms
+2022-03-02 15:11:00.717 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 292.4540 ms
+2022-03-02 15:11:24.877 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 405.0498 ms
+2022-03-02 15:11:26.391 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 259.1343 ms
+2022-03-02 15:11:28.522 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 419.1867 ms
+2022-03-02 15:11:32.021 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1002.4881 ms
+2022-03-02 15:11:32.070 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1032.1550 ms
+2022-03-02 15:11:32.070 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 715.2924 ms
+2022-03-02 15:11:32.196 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1177.8379 ms
+2022-03-02 15:11:32.196 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1177.8225 ms
+2022-03-02 15:11:32.274 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 783.9830 ms
+2022-03-02 15:11:32.449 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 793.6914 ms
+2022-03-02 15:11:32.456 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 542.2360 ms
+2022-03-02 15:11:32.456 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1009.6961 ms
+2022-03-02 15:11:35.067 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1170.0204 ms
+2022-03-02 15:11:35.067 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1170.3288 ms
+2022-03-02 15:11:35.069 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1171.9084 ms
+2022-03-02 15:11:35.071 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1174.0662 ms
+2022-03-02 15:11:35.139 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 940.0504 ms
+2022-03-02 15:11:35.139 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1242.2498 ms
+2022-03-02 15:11:35.140 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1243.6362 ms
+2022-03-02 15:11:35.140 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 793.1971 ms
+2022-03-02 15:11:35.142 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1082.8821 ms
+2022-03-02 15:11:35.192 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1295.0279 ms
+2022-03-02 15:11:35.266 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1369.2392 ms
+2022-03-02 15:11:35.523 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 942.5071 ms
+2022-03-02 15:11:35.557 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 672.2680 ms
+2022-03-02 15:11:40.228 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 148.3086 ms
+2022-03-02 15:11:41.130 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 154.9244 ms
+2022-03-02 15:11:42.527 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 138.9261 ms
+2022-03-02 15:11:43.066 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 147.7293 ms
+2022-03-02 15:11:43.434 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 171.2365 ms
+2022-03-02 15:11:43.979 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 113.4479 ms
+2022-03-02 15:11:44.844 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 196.9358 ms
+2022-03-02 15:11:46.358 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 133.6348 ms
+2022-03-02 15:11:47.332 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 136.2253 ms
+2022-03-02 15:11:47.780 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 112.4938 ms
+2022-03-02 15:11:50.591 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 196.2089 ms
+2022-03-02 15:11:50.872 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 152.9331 ms
+2022-03-02 15:11:51.380 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 112.9973 ms
+2022-03-02 15:11:52.073 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 211.8732 ms
+2022-03-02 15:11:52.397 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 188.9808 ms
+2022-03-02 15:11:53.116 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 404.8239 ms
+2022-03-02 15:11:57.056 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 129.0624 ms
+2022-03-02 15:11:57.056 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 129.0642 ms
+2022-03-02 15:13:33.078 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 163.5940 ms
+2022-03-02 15:13:37.561 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 377.4451 ms
+2022-03-02 15:13:38.216 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 124.8748 ms
+2022-03-02 15:13:38.814 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 258.1875 ms
+2022-03-02 15:13:38.974 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 243.1706 ms
+2022-03-02 15:13:39.093 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 196.0360 ms
+2022-03-02 15:13:39.175 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 132.3078 ms
+2022-03-02 15:13:39.317 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 126.3588 ms
+2022-03-02 15:13:39.614 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 285.8100 ms
+2022-03-02 15:13:49.748 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 118.8891 ms
+2022-03-02 15:14:36.669 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 321.9485 ms
+2022-03-02 15:14:38.784 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 440.5516 ms
+2022-03-02 15:14:45.144 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 200.5330 ms
+2022-03-02 15:14:45.170 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 220.1780 ms
+2022-03-02 15:14:50.208 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 105.9150 ms
+2022-03-02 15:14:53.759 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 263.8129 ms
+2022-03-02 15:14:55.460 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 284.5386 ms
+2022-03-02 15:14:57.626 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 98.3663 ms
+2022-03-02 15:15:26.007 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 221.6414 ms
+2022-03-02 15:15:27.155 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 292.0692 ms
+2022-03-02 15:15:32.704 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 778.6283 ms
+2022-03-02 15:15:32.704 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 754.3697 ms
+2022-03-02 15:15:33.702 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 145.8996 ms
+2022-03-02 15:15:40.399 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 231.1808 ms
+2022-03-02 15:15:41.286 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 154.8302 ms
+2022-03-02 15:15:42.390 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 161.1714 ms
+2022-03-02 15:15:43.880 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 171.4681 ms
+2022-03-02 15:15:44.470 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 95.5132 ms
+2022-03-02 15:15:57.547 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 208.7485 ms
+2022-03-02 15:16:00.061 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 565.0911 ms
+2022-03-02 15:16:00.538 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 159.9583 ms
+2022-03-02 15:16:01.462 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 168.2467 ms
+2022-03-02 15:16:07.626 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 142.6653 ms
+2022-03-02 15:16:12.983 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 92.2180 ms
+2022-03-02 15:16:21.870 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 282.7852 ms
+2022-03-02 15:17:20.287 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 388.0181 ms
+2022-03-02 15:17:23.006 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 291.3139 ms
+2022-03-02 15:17:25.404 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 274.2886 ms
+2022-03-02 15:19:30.053 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 251.0143 ms
+2022-03-02 15:22:29.530 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 498.5534 ms
+2022-03-02 15:22:31.362 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 870.7812 ms
+2022-03-02 15:22:32.132 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 150.8764 ms
+2022-03-02 15:22:50.250 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 211.9451 ms
+2022-03-02 15:23:00.347 +07:00 [ERR] 
+
+
+2022-03-02 15:23:00.349 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:23:00.349 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Departments'. Cannot insert duplicate key in object 'dbo.Departments'. The duplicate key value is (9).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:e8016b42-2748-423f-a419-00dfed7b8140
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.DepartmentBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 38
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:23:00.469 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 399.7843 ms
+2022-03-02 15:23:05.062 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 136.5132 ms
+2022-03-02 15:23:08.278 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 293.8393 ms
+2022-03-02 15:23:17.481 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 158.1526 ms
+2022-03-02 15:23:21.706 +07:00 [ERR] 
+
+
+2022-03-02 15:23:21.706 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:23:21.706 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Departments'. Cannot insert duplicate key in object 'dbo.Departments'. The duplicate key value is (10).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:7551c940-7c64-4282-b1da-c23dbb8fd228
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.DepartmentBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 38
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:23:21.775 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 281.9287 ms
+2022-03-02 15:23:24.094 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 284.4995 ms
+2022-03-02 15:25:16.171 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 414.5942 ms
+2022-03-02 15:25:17.409 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 325.4633 ms
+2022-03-02 15:25:21.399 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 198.5530 ms
+2022-03-02 15:25:31.033 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 266.9898 ms
+2022-03-02 15:25:35.242 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 209.5175 ms
+2022-03-02 15:25:36.088 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 98.4562 ms
+2022-03-02 15:25:40.119 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 306.6609 ms
+2022-03-02 15:26:37.070 +07:00 [INF] HTTP GET / responded 404 in 104.4275 ms
+2022-03-02 15:26:38.119 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 3.4709 ms
+2022-03-02 15:27:08.131 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 3648.2183 ms
+2022-03-02 15:27:10.644 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 461.7245 ms
+2022-03-02 15:27:21.169 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1031.1182 ms
+2022-03-02 15:27:43.722 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 132.4888 ms
+2022-03-02 15:27:46.188 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 243.0623 ms
+2022-03-02 15:27:53.909 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 259.9117 ms
+2022-03-02 15:27:57.164 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 455.4084 ms
+2022-03-02 15:27:58.494 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 247.6840 ms
+2022-03-02 15:28:02.153 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 301.1194 ms
+2022-03-02 15:30:41.584 +07:00 [INF] HTTP GET / responded 404 in 34.2118 ms
+2022-03-02 15:30:41.928 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 13.9150 ms
+2022-03-02 15:31:10.729 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 4583.8807 ms
+2022-03-02 15:31:12.548 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 244.8035 ms
+2022-03-02 15:31:19.816 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 133.2824 ms
+2022-03-02 15:31:23.068 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 341.1117 ms
+2022-03-02 15:31:28.106 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 338.0547 ms
+2022-03-02 15:31:30.893 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 175.7546 ms
+2022-03-02 15:31:38.020 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 362.1422 ms
+2022-03-02 15:31:42.133 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 724.8590 ms
+2022-03-02 15:32:06.552 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 343.7221 ms
+2022-03-02 15:32:08.101 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 324.5989 ms
+2022-03-02 15:32:10.385 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 145.2988 ms
+2022-03-02 15:32:12.372 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 295.3731 ms
+2022-03-02 15:32:20.230 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 956.2880 ms
+2022-03-02 15:32:26.207 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 167.8900 ms
+2022-03-02 15:32:34.203 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 310.6925 ms
+2022-03-02 15:32:48.207 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 293.2692 ms
+2022-03-02 15:32:50.173 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 203.4489 ms
+2022-03-02 15:32:51.529 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 242.1655 ms
+2022-03-02 15:35:03.442 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 799.8142 ms
+2022-03-02 15:35:40.208 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 540.9793 ms
+2022-03-02 15:35:42.082 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 165.6225 ms
+2022-03-02 15:35:44.588 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 172.9403 ms
+2022-03-02 15:35:52.187 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 256.0316 ms
+2022-03-02 15:35:54.454 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 382.9860 ms
+2022-03-02 15:37:07.301 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 361.3977 ms
+2022-03-02 15:38:31.894 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 320.1910 ms
+2022-03-02 15:39:29.286 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 196.4662 ms
+2022-03-02 15:41:18.752 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 256.3611 ms
+2022-03-02 15:41:22.494 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 363.6566 ms
+2022-03-02 15:42:46.464 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 256.9661 ms
+2022-03-02 15:43:00.363 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 185.5550 ms
+2022-03-02 15:43:13.245 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 95.5127 ms
+2022-03-02 15:43:21.736 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 163.4911 ms
+2022-03-02 15:44:05.696 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 255.9874 ms
+2022-03-02 15:44:07.165 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 190.6866 ms
+2022-03-02 15:44:08.687 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 103.1673 ms
+2022-03-02 15:44:17.325 +07:00 [ERR] 
+
+
+2022-03-02 15:44:17.327 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:44:17.327 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Departments'. Cannot insert duplicate key in object 'dbo.Departments'. The duplicate key value is (4).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:fe6aba61-505f-4d79-8b17-ed7d58166e43
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.DepartmentBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 38
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:44:17.590 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 838.1272 ms
+2022-03-02 15:44:20.750 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 164.3861 ms
+2022-03-02 15:44:24.708 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 119.2499 ms
+2022-03-02 15:44:48.714 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 220.4866 ms
+2022-03-02 15:44:48.729 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 235.0379 ms
+2022-03-02 15:44:53.597 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 148.8729 ms
+2022-03-02 15:45:04.305 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 182.8321 ms
+2022-03-02 15:45:23.407 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 162.6667 ms
+2022-03-02 15:46:39.476 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 220.7719 ms
+2022-03-02 15:46:40.841 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 142.9273 ms
+2022-03-02 15:46:43.006 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 112.4447 ms
+2022-03-02 15:46:44.538 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 252.3609 ms
+2022-03-02 15:46:45.853 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 291.1240 ms
+2022-03-02 15:46:47.715 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 94.7423 ms
+2022-03-02 15:47:05.208 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 14099.7129 ms
+2022-03-02 15:47:07.665 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 312.7451 ms
+2022-03-02 15:47:14.590 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 157.6283 ms
+2022-03-02 15:47:17.670 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 192.7731 ms
+2022-03-02 15:47:19.565 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 237.4398 ms
+2022-03-02 15:47:59.279 +07:00 [INF] HTTP GET / responded 404 in 46.9935 ms
+2022-03-02 15:47:59.476 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 2.1375 ms
+2022-03-02 15:48:57.548 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 4021.7933 ms
+2022-03-02 15:49:12.313 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 386.2421 ms
+2022-03-02 15:49:12.313 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 387.5454 ms
+2022-03-02 15:49:12.313 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 225.5537 ms
+2022-03-02 15:49:12.394 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 448.2959 ms
+2022-03-02 15:49:20.462 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 391.5952 ms
+2022-03-02 15:50:24.173 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 238.9299 ms
+2022-03-02 15:50:24.173 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 238.7833 ms
+2022-03-02 15:50:26.401 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 247.1483 ms
+2022-03-02 15:50:51.461 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 984.5655 ms
+2022-03-02 15:50:53.481 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 416.4408 ms
+2022-03-02 15:50:55.496 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 179.6066 ms
+2022-03-02 15:50:57.051 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 256.9723 ms
+2022-03-02 15:52:17.208 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 213.8109 ms
+2022-03-02 15:52:18.515 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 192.5061 ms
+2022-03-02 15:52:25.742 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 266.7737 ms
+2022-03-02 15:52:41.219 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 163.9454 ms
+2022-03-02 15:52:43.452 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 170.4173 ms
+2022-03-02 15:52:45.822 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 171.2390 ms
+2022-03-02 15:52:49.250 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 153.0284 ms
+2022-03-02 15:52:56.089 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 182.9966 ms
+2022-03-02 15:52:59.536 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 198.9297 ms
+2022-03-02 15:53:01.893 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 129.9229 ms
+2022-03-02 15:53:04.911 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 151.2619 ms
+2022-03-02 15:53:33.095 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 289.7549 ms
+2022-03-02 15:53:34.426 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 143.1319 ms
+2022-03-02 15:53:36.584 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 126.6846 ms
+2022-03-02 15:54:25.330 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 184.3728 ms
+2022-03-02 15:54:26.310 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 145.9845 ms
+2022-03-02 15:54:28.125 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 124.2268 ms
+2022-03-02 15:54:32.123 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 186.2696 ms
+2022-03-02 15:54:33.716 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 113.6912 ms
+2022-03-02 15:54:41.301 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 191.4638 ms
+2022-03-02 15:54:42.763 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 194.7434 ms
+2022-03-02 15:54:43.975 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 110.1233 ms
+2022-03-02 15:54:52.451 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 207.5464 ms
+2022-03-02 15:54:53.317 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 142.5054 ms
+2022-03-02 15:54:55.060 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 141.1384 ms
+2022-03-02 15:55:13.814 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 113.1714 ms
+2022-03-02 15:55:15.005 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 119.8198 ms
+2022-03-02 15:55:16.037 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 169.5763 ms
+2022-03-02 15:57:27.720 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 526.2667 ms
+2022-03-02 15:57:31.861 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 221.4059 ms
+2022-03-02 15:57:36.086 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 153.6477 ms
+2022-03-02 15:57:38.786 +07:00 [ERR] 
+
+
+2022-03-02 15:57:38.793 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:57:38.793 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Error converting value 4 to type 'ERM.Model.Sample.Models.Department'. Path '', line 1, position 1.
+ ---> System.ArgumentException: Could not cast or convert from System.Int64 to ERM.Model.Sample.Models.Department.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Business.Sample.DepartmentBusiness.EditAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 57
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:57:39.270 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 823.6491 ms
+2022-03-02 15:58:03.477 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 243.2842 ms
+2022-03-02 15:58:04.855 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 163.3165 ms
+2022-03-02 15:58:07.189 +07:00 [ERR] 
+
+
+2022-03-02 15:58:07.189 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:58:07.189 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Error converting value 5 to type 'ERM.Model.Sample.Models.Department'. Path '', line 1, position 1.
+ ---> System.ArgumentException: Could not cast or convert from System.Int64 to ERM.Model.Sample.Models.Department.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Business.Sample.DepartmentBusiness.EditAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 57
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:58:07.249 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 270.6184 ms
+2022-03-02 15:58:18.277 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 113.0517 ms
+2022-03-02 15:58:20.620 +07:00 [ERR] 
+
+
+2022-03-02 15:58:20.620 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:58:20.620 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Error converting value 10 to type 'ERM.Model.Sample.Models.Department'. Path '', line 1, position 2.
+ ---> System.ArgumentException: Could not cast or convert from System.Int64 to ERM.Model.Sample.Models.Department.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Business.Sample.DepartmentBusiness.EditAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 57
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:58:20.718 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 268.3682 ms
+2022-03-02 15:58:28.603 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 203.4219 ms
+2022-03-02 15:58:31.837 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 200.9312 ms
+2022-03-02 15:58:33.650 +07:00 [ERR] 
+
+
+2022-03-02 15:58:33.651 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:58:33.651 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Error converting value 20 to type 'ERM.Model.Sample.Models.Department'. Path '', line 1, position 2.
+ ---> System.ArgumentException: Could not cast or convert from System.Int64 to ERM.Model.Sample.Models.Department.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Business.Sample.DepartmentBusiness.EditAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 57
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:58:33.733 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 295.1744 ms
+2022-03-02 15:58:55.788 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 519.5192 ms
+2022-03-02 15:58:59.485 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 177.7396 ms
+2022-03-02 15:59:03.370 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 219.7509 ms
+2022-03-02 15:59:13.296 +07:00 [ERR] 
+
+
+2022-03-02 15:59:13.296 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:59:13.296 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Error converting value 20 to type 'ERM.Model.Sample.Models.Department'. Path '', line 1, position 2.
+ ---> System.ArgumentException: Could not cast or convert from System.Int64 to ERM.Model.Sample.Models.Department.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Business.Sample.DepartmentBusiness.DeleteAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 79
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:59:13.384 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 8786.6298 ms
+2022-03-02 15:59:23.874 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 437.7766 ms
+2022-03-02 15:59:30.170 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 211.4127 ms
+2022-03-02 15:59:36.463 +07:00 [ERR] 
+
+
+2022-03-02 15:59:36.463 +07:00 [ERR] 
+erm_system
+
+2022-03-02 15:59:36.463 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Error converting value 20 to type 'ERM.Model.Sample.Models.Department'. Path '', line 1, position 2.
+ ---> System.ArgumentException: Could not cast or convert from System.Int64 to ERM.Model.Sample.Models.Department.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Business.Sample.DepartmentBusiness.DeleteAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 79
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 15:59:36.532 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 3222.8495 ms
+2022-03-02 15:59:50.676 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 3917.0979 ms
+2022-03-02 15:59:59.825 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 5560.5947 ms
+2022-03-02 16:00:15.069 +07:00 [ERR] 
+
+
+2022-03-02 16:00:15.069 +07:00 [ERR] 
+erm_system
+
+2022-03-02 16:00:15.069 +07:00 [ERR] ||
+Newtonsoft.Json.JsonSerializationException: Error converting value 10 to type 'ERM.Model.Sample.Models.Department'. Path '', line 1, position 2.
+ ---> System.ArgumentException: Could not cast or convert from System.Int64 to ERM.Model.Sample.Models.Department.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at ERM.Common.LVJsonHelper.Deserializer[TEntity](String jsonValue)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Business.Sample.DepartmentBusiness.DeleteAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\DepartmentBusiness.cs:line 79
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-02 16:00:15.137 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 10874.8397 ms
+2022-03-02 16:01:04.293 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 2396.8220 ms
+2022-03-02 16:01:06.861 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 217.1793 ms
+2022-03-02 16:01:24.902 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 15880.8923 ms
+2022-03-02 16:01:31.743 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 225.8759 ms
+2022-03-02 16:01:35.507 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 206.4919 ms
+2022-03-02 16:01:44.977 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 7918.9845 ms
+2022-03-02 16:01:55.114 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 742.6208 ms
+2022-03-02 16:02:37.614 +07:00 [INF] HTTP GET / responded 404 in 34.4330 ms
+2022-03-02 16:02:37.810 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.8629 ms
+2022-03-02 16:04:27.509 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 3998.9029 ms
+2022-03-02 16:04:28.735 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 216.9853 ms
+2022-03-02 16:04:31.628 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 153.9887 ms
+2022-03-02 16:04:34.048 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 191.9117 ms
+2022-03-02 16:04:35.765 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 317.4488 ms
+2022-03-02 16:04:37.598 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 294.5690 ms
+2022-03-02 16:05:00.980 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 188.2366 ms

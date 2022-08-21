@@ -1,0 +1,4 @@
+2022-02-10 16:22:11.787 +07:00 [INF] HTTP GET / responded 404 in 40.9453 ms
+2022-02-10 16:22:12.076 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.1314 ms
+2022-02-10 16:24:26.481 +07:00 [INF] HTTP GET /api/sp responded 404 in 0.3598 ms
+2022-02-10 16:24:31.102 +07:00 [INF] HTTP GET /api/sample responded 200 in 75.5762 ms

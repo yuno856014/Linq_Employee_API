@@ -1,0 +1,562 @@
+2022-03-03 08:05:34.651 +07:00 [INF] HTTP GET / responded 404 in 31.8286 ms
+2022-03-03 08:05:35.241 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 2.6967 ms
+2022-03-03 08:06:46.076 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 7629.8486 ms
+2022-03-03 08:06:50.574 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 243.5065 ms
+2022-03-03 08:06:52.893 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 354.0884 ms
+2022-03-03 08:06:54.187 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 156.5081 ms
+2022-03-03 08:06:55.718 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 203.6306 ms
+2022-03-03 08:06:57.635 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 200.4701 ms
+2022-03-03 08:06:58.573 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 147.6056 ms
+2022-03-03 08:06:59.714 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 245.2266 ms
+2022-03-03 08:07:01.991 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 271.8024 ms
+2022-03-03 08:07:02.868 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 171.1632 ms
+2022-03-03 08:07:03.981 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 145.3747 ms
+2022-03-03 08:07:05.610 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 155.6576 ms
+2022-03-03 08:07:06.728 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 296.8018 ms
+2022-03-03 08:07:08.069 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 173.6224 ms
+2022-03-03 08:07:09.721 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 175.3289 ms
+2022-03-03 08:07:10.476 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 242.2317 ms
+2022-03-03 08:16:41.741 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 334.4676 ms
+2022-03-03 08:16:44.416 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 195.0674 ms
+2022-03-03 08:16:46.622 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 202.8109 ms
+2022-03-03 08:16:47.790 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 183.7874 ms
+2022-03-03 08:19:40.111 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 200.6435 ms
+2022-03-03 08:19:42.105 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 257.5492 ms
+2022-03-03 08:19:44.156 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 182.7199 ms
+2022-03-03 08:19:48.869 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 178.3944 ms
+2022-03-03 08:19:52.799 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 205.0007 ms
+2022-03-03 08:19:54.378 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 268.4668 ms
+2022-03-03 08:19:55.724 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 149.4331 ms
+2022-03-03 08:19:57.205 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 195.2448 ms
+2022-03-03 08:19:58.544 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 175.6974 ms
+2022-03-03 08:39:05.495 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 721.1320 ms
+2022-03-03 08:39:08.645 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 166.5894 ms
+2022-03-03 08:39:40.032 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 111.2579 ms
+2022-03-03 08:40:48.133 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 788.9712 ms
+2022-03-03 08:40:50.948 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 109.7426 ms
+2022-03-03 08:41:06.392 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 587.0541 ms
+2022-03-03 08:41:07.697 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 185.6166 ms
+2022-03-03 08:41:13.531 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 134.8441 ms
+2022-03-03 08:41:18.963 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 290.8347 ms
+2022-03-03 08:41:20.219 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 165.7371 ms
+2022-03-03 08:41:21.535 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 122.9934 ms
+2022-03-03 08:41:22.220 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 105.7689 ms
+2022-03-03 08:41:58.598 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 192.8865 ms
+2022-03-03 08:41:59.830 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 157.6328 ms
+2022-03-03 08:42:12.163 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 120.7204 ms
+2022-03-03 08:42:17.193 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 215.9589 ms
+2022-03-03 08:42:18.413 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 111.9173 ms
+2022-03-03 08:42:27.398 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 132.7347 ms
+2022-03-03 08:42:39.419 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 193.2560 ms
+2022-03-03 08:42:40.610 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 217.1695 ms
+2022-03-03 08:42:42.899 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 210.1870 ms
+2022-03-03 08:42:58.153 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 158.1658 ms
+2022-03-03 08:42:59.399 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 93.8651 ms
+2022-03-03 08:43:01.139 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 168.6660 ms
+2022-03-03 08:43:15.424 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 158.3458 ms
+2022-03-03 08:43:16.562 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 113.5537 ms
+2022-03-03 08:46:40.223 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 229.4862 ms
+2022-03-03 08:49:34.423 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 135.1272 ms
+2022-03-03 08:51:31.707 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 366.4891 ms
+2022-03-03 09:14:03.269 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 643.2431 ms
+2022-03-03 09:14:03.268 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 746.9276 ms
+2022-03-03 09:14:05.482 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 100.6891 ms
+2022-03-03 09:18:21.757 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 359.3036 ms
+2022-03-03 09:18:21.757 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 359.1938 ms
+2022-03-03 09:18:25.650 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 237.6700 ms
+2022-03-03 09:18:25.651 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 294.6293 ms
+2022-03-03 09:19:03.720 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 375.6358 ms
+2022-03-03 09:19:03.725 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 405.1863 ms
+2022-03-03 09:19:17.559 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 163.2955 ms
+2022-03-03 09:19:17.573 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 176.8210 ms
+2022-03-03 09:19:35.614 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 337.8255 ms
+2022-03-03 09:20:11.859 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 20226.7272 ms
+2022-03-03 09:21:03.776 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 162.0302 ms
+2022-03-03 09:21:08.856 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 98.4655 ms
+2022-03-03 09:31:21.367 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 2584.9730 ms
+2022-03-03 09:32:04.803 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 94.2976 ms
+2022-03-03 09:32:15.334 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 112.9475 ms
+2022-03-03 09:32:17.687 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 114.8868 ms
+2022-03-03 09:32:19.126 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 116.6196 ms
+2022-03-03 09:32:21.541 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 142.6092 ms
+2022-03-03 09:32:49.417 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 10581.5692 ms
+2022-03-03 09:33:56.922 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 147.7432 ms
+2022-03-03 09:34:36.746 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 178.1482 ms
+2022-03-03 09:38:14.650 +07:00 [INF] HTTP GET / responded 404 in 75.4958 ms
+2022-03-03 09:38:14.650 +07:00 [INF] HTTP GET / responded 404 in 65.9267 ms
+2022-03-03 09:38:14.876 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.0167 ms
+2022-03-03 09:38:18.041 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 3452.8600 ms
+2022-03-03 09:38:23.565 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 177.1175 ms
+2022-03-03 09:38:25.215 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 157.2704 ms
+2022-03-03 09:38:26.475 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 143.5046 ms
+2022-03-03 09:38:27.958 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 160.0621 ms
+2022-03-03 09:38:32.293 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 304.6590 ms
+2022-03-03 09:38:33.544 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 186.1657 ms
+2022-03-03 09:38:34.818 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 219.3793 ms
+2022-03-03 09:38:36.603 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 277.9463 ms
+2022-03-03 09:38:37.360 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 251.2559 ms
+2022-03-03 09:38:38.644 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 115.4971 ms
+2022-03-03 09:38:56.675 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 113.0632 ms
+2022-03-03 09:39:51.791 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 169.5758 ms
+2022-03-03 09:40:35.455 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 281.1209 ms
+2022-03-03 09:41:30.743 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 185.0846 ms
+2022-03-03 09:41:48.699 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 242.3296 ms
+2022-03-03 09:54:23.278 +07:00 [INF] HTTP GET / responded 404 in 25.5412 ms
+2022-03-03 09:54:23.443 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.6153 ms
+2022-03-03 09:54:37.907 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 8143.1335 ms
+2022-03-03 09:54:38.215 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 8451.3781 ms
+2022-03-03 10:02:16.509 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1251.3128 ms
+2022-03-03 10:02:16.511 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1253.2010 ms
+2022-03-03 10:04:09.507 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 299.0247 ms
+2022-03-03 10:04:09.532 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 323.9596 ms
+2022-03-03 10:04:15.285 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 290.4825 ms
+2022-03-03 10:04:15.290 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 295.0397 ms
+2022-03-03 10:04:39.720 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 336.2394 ms
+2022-03-03 10:04:39.729 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 344.8636 ms
+2022-03-03 10:05:01.981 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 490.7074 ms
+2022-03-03 10:05:01.987 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 493.7708 ms
+2022-03-03 10:06:55.945 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 255.7185 ms
+2022-03-03 10:06:55.950 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 260.1434 ms
+2022-03-03 10:07:31.376 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 261.6598 ms
+2022-03-03 10:07:31.377 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 245.2140 ms
+2022-03-03 10:07:49.464 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 295.6153 ms
+2022-03-03 10:07:49.464 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 295.4809 ms
+2022-03-03 10:07:49.485 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 316.1452 ms
+2022-03-03 10:07:53.342 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 336.0818 ms
+2022-03-03 10:07:53.400 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 390.0004 ms
+2022-03-03 10:07:53.406 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 364.1981 ms
+2022-03-03 10:08:03.467 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 300.5011 ms
+2022-03-03 10:08:03.473 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 306.4702 ms
+2022-03-03 10:08:03.474 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 306.4001 ms
+2022-03-03 10:08:13.043 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 439.2929 ms
+2022-03-03 10:08:13.056 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 451.7832 ms
+2022-03-03 10:08:13.058 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 448.5765 ms
+2022-03-03 10:08:24.677 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 312.6382 ms
+2022-03-03 10:08:24.683 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 316.8747 ms
+2022-03-03 10:08:24.683 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 318.6723 ms
+2022-03-03 10:08:46.101 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 268.4017 ms
+2022-03-03 10:08:46.122 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 289.7131 ms
+2022-03-03 10:08:46.122 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 289.7133 ms
+2022-03-03 10:09:10.805 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 753.5311 ms
+2022-03-03 10:09:10.811 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 752.1164 ms
+2022-03-03 10:09:10.825 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 478.5047 ms
+2022-03-03 10:10:00.647 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 248.6040 ms
+2022-03-03 10:10:00.685 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 274.8072 ms
+2022-03-03 10:10:00.685 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 274.1830 ms
+2022-03-03 10:10:26.248 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 315.2875 ms
+2022-03-03 10:10:26.262 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 329.5575 ms
+2022-03-03 10:10:26.262 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 329.6708 ms
+2022-03-03 10:10:38.060 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 362.3333 ms
+2022-03-03 10:10:38.080 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 385.3392 ms
+2022-03-03 10:10:38.113 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 415.2342 ms
+2022-03-03 10:10:40.117 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 226.4478 ms
+2022-03-03 10:10:40.121 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 194.7041 ms
+2022-03-03 10:10:40.122 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 195.5411 ms
+2022-03-03 10:10:55.598 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 304.8543 ms
+2022-03-03 10:10:55.607 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 313.7131 ms
+2022-03-03 10:10:55.613 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 319.7254 ms
+2022-03-03 10:13:42.645 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 322.6211 ms
+2022-03-03 10:13:42.653 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 266.7444 ms
+2022-03-03 10:13:42.658 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 335.3032 ms
+2022-03-03 10:13:52.289 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 262.0567 ms
+2022-03-03 10:13:52.301 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 273.5794 ms
+2022-03-03 10:13:52.305 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 277.9709 ms
+2022-03-03 10:19:44.058 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1180.8281 ms
+2022-03-03 10:19:44.072 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1197.4462 ms
+2022-03-03 10:19:44.072 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1197.4465 ms
+2022-03-03 10:21:48.538 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1006.6832 ms
+2022-03-03 10:21:48.542 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1010.6103 ms
+2022-03-03 10:21:48.546 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1014.4413 ms
+2022-03-03 10:23:48.558 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 364.4599 ms
+2022-03-03 10:23:48.618 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 420.9390 ms
+2022-03-03 10:23:48.649 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 458.0256 ms
+2022-03-03 10:24:15.325 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 316.7933 ms
+2022-03-03 10:24:15.325 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 317.2415 ms
+2022-03-03 10:24:15.325 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 316.7933 ms
+2022-03-03 10:24:39.681 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 315.1548 ms
+2022-03-03 10:24:39.694 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 326.1462 ms
+2022-03-03 10:24:39.711 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 343.7729 ms
+2022-03-03 10:24:50.390 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1792.4574 ms
+2022-03-03 10:24:50.397 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1791.4741 ms
+2022-03-03 10:24:50.403 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1805.0947 ms
+2022-03-03 10:24:52.211 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 212.1849 ms
+2022-03-03 10:25:23.647 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 610.7636 ms
+2022-03-03 10:25:23.695 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 658.5127 ms
+2022-03-03 10:25:23.706 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 669.7063 ms
+2022-03-03 10:25:24.532 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 264.7066 ms
+2022-03-03 10:25:47.383 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 441.6739 ms
+2022-03-03 10:25:47.446 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 503.1724 ms
+2022-03-03 10:25:47.450 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 508.0778 ms
+2022-03-03 10:25:49.490 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 448.1604 ms
+2022-03-03 10:25:51.278 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 342.1015 ms
+2022-03-03 10:25:51.284 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 283.7504 ms
+2022-03-03 10:25:51.286 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 349.7744 ms
+2022-03-03 10:25:52.227 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 170.4295 ms
+2022-03-03 10:25:56.135 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 125.7721 ms
+2022-03-03 10:25:56.978 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 108.5823 ms
+2022-03-03 10:25:57.731 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 107.9014 ms
+2022-03-03 10:26:06.067 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 414.0170 ms
+2022-03-03 10:26:06.097 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 444.6522 ms
+2022-03-03 10:26:06.109 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 455.4500 ms
+2022-03-03 10:26:07.130 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 139.5042 ms
+2022-03-03 10:26:08.277 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 106.3605 ms
+2022-03-03 10:26:14.906 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 226.4970 ms
+2022-03-03 10:26:14.920 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 240.8985 ms
+2022-03-03 10:26:14.925 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 245.3109 ms
+2022-03-03 10:26:15.430 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 113.5627 ms
+2022-03-03 10:26:16.503 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 108.1265 ms
+2022-03-03 10:26:17.163 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 96.9634 ms
+2022-03-03 10:26:23.018 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 297.8676 ms
+2022-03-03 10:26:23.027 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 301.8791 ms
+2022-03-03 10:26:23.027 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 301.6055 ms
+2022-03-03 10:26:24.354 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 113.7112 ms
+2022-03-03 10:26:25.703 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 118.9622 ms
+2022-03-03 10:26:26.288 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 97.0898 ms
+2022-03-03 10:27:09.336 +07:00 [ERR] 
+
+
+2022-03-03 10:27:09.342 +07:00 [ERR] 
+erm_system
+
+2022-03-03 10:27:09.342 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Id', table 'EmployeeMNG.dbo.Employee'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:f9b26feb-c546-4346-8ab4-585fd448d6b1
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.EmployeeBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\EmployeeBusiness.cs:line 37
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-03 10:27:09.722 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 12211.5366 ms
+2022-03-03 10:27:26.072 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 365.4717 ms
+2022-03-03 10:27:26.093 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 384.2794 ms
+2022-03-03 10:27:26.098 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 463.0115 ms
+2022-03-03 10:27:27.933 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 196.6468 ms
+2022-03-03 10:28:20.299 +07:00 [ERR] 
+
+
+2022-03-03 10:28:20.299 +07:00 [ERR] 
+erm_system
+
+2022-03-03 10:28:20.299 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Id', table 'EmployeeMNG.dbo.Employee'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:489205bc-eaee-4e06-a277-98a28278d3db
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.EmployeeBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\EmployeeBusiness.cs:line 37
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-03 10:28:20.397 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 18908.2190 ms
+2022-03-03 10:29:13.625 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 386.4961 ms
+2022-03-03 10:29:13.631 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 391.8040 ms
+2022-03-03 10:29:13.658 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 419.2913 ms
+2022-03-03 10:29:14.511 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 214.7138 ms
+2022-03-03 10:29:45.354 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 16504.9194 ms
+2022-03-03 10:29:47.826 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 475.8408 ms
+2022-03-03 10:29:47.854 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 547.6488 ms
+2022-03-03 10:29:47.905 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 598.9808 ms
+2022-03-03 10:32:13.733 +07:00 [INF] HTTP GET / responded 404 in 38.0532 ms
+2022-03-03 10:32:13.891 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.3832 ms
+2022-03-03 10:32:21.130 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 3838.0397 ms
+2022-03-03 10:32:23.503 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 275.2457 ms
+2022-03-03 10:32:26.442 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 439.1740 ms
+2022-03-03 10:32:26.442 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 439.1739 ms
+2022-03-03 10:32:26.557 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 553.5911 ms
+2022-03-03 10:32:29.220 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 235.4538 ms
+2022-03-03 10:32:30.267 +07:00 [ERR] 
+
+
+2022-03-03 10:32:30.267 +07:00 [ERR] 
+erm_system
+
+2022-03-03 10:32:30.267 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Employee'. Cannot insert duplicate key in object 'dbo.Employee'. The duplicate key value is (0).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:f2ef9c8f-54bd-4035-b9a4-d29a84bd507e
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.EmployeeBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\EmployeeBusiness.cs:line 37
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-03 10:32:30.461 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 524.2930 ms
+2022-03-03 10:32:34.674 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 233.4164 ms
+2022-03-03 10:32:36.686 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 153.5931 ms
+2022-03-03 10:32:37.464 +07:00 [ERR] 
+
+
+2022-03-03 10:32:37.465 +07:00 [ERR] 
+erm_system
+
+2022-03-03 10:32:37.465 +07:00 [ERR] ||
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Employee'. Cannot insert duplicate key in object 'dbo.Employee'. The duplicate key value is (0).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery(IDbCommand command)
+   at LinqToDB.Data.DataConnection.ExecuteNonQuery()
+   at LinqToDB.Data.DataConnection.QueryRunner.ExecuteNonQuery()
+   at LinqToDB.Linq.QueryRunner.NonQueryQuery(Query query, IDataContext dataContext, Expression expr, Object[] parameters, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.<>c__DisplayClass31_0.<SetNonQueryQuery>b__0(IDataContext db, Expression expr, Object[] ps, Object[] preambles)
+   at LinqToDB.Linq.QueryRunner.Insert`1.Query(IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String serverName, String databaseName, String schemaName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, InsertColumnFilter`1 columnFilter, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at LinqToDB.DataExtensions.Insert[T](IDataContext dataContext, T obj, String tableName, String databaseName, String schemaName, String serverName, TableOptions tableOptions)
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveLogic[TEntity](ObjectStateManager objManager)
+ClientConnectionId:f2ef9c8f-54bd-4035-b9a4-d29a84bd507e
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at ERM.Common.DynamicAssembly.Call(Object target, String methodName, Object[] paramList, Type genericType)
+   at ERM.DAL.EntityCore.DataContext.DbContext.Save()
+   at ERM.DAL.EntityCore.DataContext.DbContext.SaveChanges()
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(EFDbContext dbContext, Boolean ignoreTransaction)
+   at ERM.DAL.EntityCore.UnitOfWork.SaveChanges(Boolean ignoreTransaction)
+   at ERM.Business.Sample.EmployeeBusiness.AddAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\EmployeeBusiness.cs:line 37
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-03 10:32:37.575 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 287.4019 ms
+2022-03-03 10:33:04.389 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 508.9612 ms
+2022-03-03 10:33:04.405 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 525.8647 ms
+2022-03-03 10:33:04.418 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 528.5270 ms
+2022-03-03 10:33:06.009 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 237.1652 ms
+2022-03-03 10:33:07.210 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 155.4147 ms
+2022-03-03 10:33:09.066 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 336.8149 ms
+2022-03-03 10:33:09.066 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 382.1556 ms
+2022-03-03 10:33:09.078 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 399.5768 ms
+2022-03-03 10:33:57.467 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 660.8046 ms
+2022-03-03 10:33:57.473 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 668.3943 ms
+2022-03-03 10:33:57.473 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 667.4158 ms
+2022-03-03 10:34:02.765 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 168.1141 ms
+2022-03-03 10:34:09.058 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 173.1315 ms
+2022-03-03 10:34:53.922 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 215.0334 ms
+2022-03-03 10:34:56.435 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 189.4440 ms
+2022-03-03 10:35:25.187 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 431.8331 ms
+2022-03-03 10:35:25.188 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 331.0113 ms
+2022-03-03 10:35:25.191 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 435.2703 ms
+2022-03-03 10:35:27.949 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 465.7513 ms
+2022-03-03 10:35:27.953 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 431.1151 ms
+2022-03-03 10:35:27.957 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 434.4287 ms
+2022-03-03 10:35:30.642 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 128.9927 ms
+2022-03-03 10:36:38.422 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 527.7687 ms
+2022-03-03 10:36:38.422 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 510.8593 ms
+2022-03-03 10:36:38.478 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 584.2729 ms
+2022-03-03 10:36:39.412 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 197.1580 ms
+2022-03-03 10:39:13.999 +07:00 [INF] HTTP GET / responded 404 in 76.8658 ms
+2022-03-03 10:39:14.234 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.6744 ms
+2022-03-03 10:40:26.952 +07:00 [INF] HTTP GET / responded 404 in 95.8032 ms
+2022-03-03 10:40:27.542 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 6.2852 ms
+2022-03-03 10:40:38.411 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1360.6460 ms
+2022-03-03 10:40:38.411 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 7837.5372 ms
+2022-03-03 10:40:38.411 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1360.5996 ms
+2022-03-03 10:40:38.411 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 7837.5685 ms
+2022-03-03 10:40:38.411 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 7837.5290 ms
+2022-03-03 10:40:38.412 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1360.9546 ms
+2022-03-03 10:40:40.301 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 253.9471 ms
+2022-03-03 10:40:42.881 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 233.6589 ms
+2022-03-03 10:40:47.279 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 129.6677 ms
+2022-03-03 10:40:50.870 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 301.5628 ms
+2022-03-03 10:40:52.848 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 385.2076 ms
+2022-03-03 10:40:52.848 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 375.1486 ms
+2022-03-03 10:40:52.848 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 379.3443 ms
+2022-03-03 10:42:43.771 +07:00 [INF] HTTP GET / responded 404 in 83.9562 ms
+2022-03-03 10:42:44.220 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.5504 ms
+2022-03-03 10:43:07.759 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 5121.4312 ms
+2022-03-03 10:43:07.759 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 5121.5687 ms
+2022-03-03 10:43:07.759 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 5121.5706 ms
+2022-03-03 10:50:19.156 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 2848.0727 ms
+2022-03-03 10:50:19.156 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 2846.6858 ms
+2022-03-03 10:50:19.156 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 2848.1408 ms
+2022-03-03 10:50:48.467 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1592.4113 ms
+2022-03-03 10:50:48.467 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1590.8142 ms
+2022-03-03 10:50:48.516 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1640.7119 ms
+2022-03-03 10:51:08.587 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 534.8158 ms
+2022-03-03 10:51:08.590 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 537.6535 ms
+2022-03-03 10:51:08.704 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 643.1974 ms
+2022-03-03 10:51:14.465 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 336.7315 ms
+2022-03-03 10:51:14.468 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 339.6943 ms
+2022-03-03 10:51:14.474 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 346.3971 ms
+2022-03-03 10:51:16.056 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 168.4930 ms
+2022-03-03 10:51:57.985 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 16620.3665 ms
+2022-03-03 10:52:03.192 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 279.5155 ms
+2022-03-03 10:52:03.192 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 2921.3477 ms
+2022-03-03 10:52:03.203 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 288.9373 ms
+2022-03-03 10:53:27.423 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 546.3624 ms
+2022-03-03 10:53:27.423 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 440.1816 ms
+2022-03-03 10:53:27.432 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 550.1778 ms
+2022-03-03 10:53:40.185 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 566.9789 ms
+2022-03-03 10:53:40.188 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 569.9205 ms
+2022-03-03 10:53:40.236 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 566.5241 ms
+2022-03-03 10:53:56.031 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 266.5789 ms
+2022-03-03 10:53:56.068 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 304.2235 ms
+2022-03-03 10:53:56.068 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 304.2263 ms
+2022-03-03 10:53:59.288 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 220.2788 ms
+2022-03-03 10:54:02.613 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 263.6011 ms
+2022-03-03 10:54:04.797 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 427.3538 ms
+2022-03-03 10:54:04.798 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 355.2063 ms
+2022-03-03 10:54:04.799 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 358.6852 ms
+2022-03-03 10:54:07.911 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 113.3694 ms
+2022-03-03 10:59:34.293 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 451.7961 ms
+2022-03-03 10:59:40.987 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 162.1719 ms
+2022-03-03 10:59:50.277 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 998.9459 ms
+2022-03-03 10:59:50.297 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1019.4456 ms
+2022-03-03 10:59:50.345 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1069.2330 ms
+2022-03-03 10:59:53.530 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 142.4558 ms
+2022-03-03 11:00:03.114 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 199.1876 ms
+2022-03-03 11:00:48.122 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 145.8207 ms
+2022-03-03 11:01:47.022 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 631.5663 ms
+2022-03-03 11:01:47.031 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 636.6778 ms
+2022-03-03 11:01:47.032 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 641.5159 ms
+2022-03-03 11:01:49.413 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 327.2263 ms
+2022-03-03 11:09:00.484 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 242.9931 ms
+2022-03-03 11:09:02.688 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 99.4208 ms
+2022-03-03 11:09:03.967 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 111.6201 ms
+2022-03-03 11:09:05.467 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 107.4273 ms
+2022-03-03 11:09:06.697 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 126.5472 ms
+2022-03-03 11:09:09.337 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 101.5865 ms
+2022-03-03 11:09:11.682 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 97.7586 ms
+2022-03-03 11:09:12.635 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 133.4144 ms
+2022-03-03 11:09:18.978 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 223.6064 ms
+2022-03-03 11:09:20.983 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 409.8925 ms
+2022-03-03 11:09:20.984 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 381.7340 ms
+2022-03-03 11:09:20.989 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 384.5521 ms
+2022-03-03 11:09:22.213 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 185.4228 ms
+2022-03-03 11:09:23.913 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 128.7313 ms
+2022-03-03 11:09:25.377 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 347.1399 ms
+2022-03-03 11:09:25.392 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 359.6643 ms
+2022-03-03 11:09:25.398 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 348.1859 ms
+2022-03-03 11:11:26.568 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1039.7847 ms
+2022-03-03 11:11:26.593 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1102.4757 ms
+2022-03-03 11:11:26.595 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 1065.2832 ms
+2022-03-03 11:27:33.495 +07:00 [INF] HTTP GET / responded 404 in 73.0913 ms
+2022-03-03 11:27:33.739 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 2.5122 ms
+2022-03-03 11:27:47.122 +07:00 [ERR] 
+
+
+2022-03-03 11:27:47.123 +07:00 [ERR] 
+erm_system
+
+2022-03-03 11:27:47.124 +07:00 [ERR] ||
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.String.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Common.Http.LVStreamReader.ReadInt16()
+   at ERM.Business.Sample.EmployeeBusiness.GetListListIdAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\EmployeeBusiness.cs:line 34
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-03 11:27:48.236 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 4058.1541 ms
+2022-03-03 11:27:48.237 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 4059.1460 ms
+2022-03-03 11:28:20.506 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 11558.9689 ms
+2022-03-03 11:28:20.792 +07:00 [ERR] 
+
+
+2022-03-03 11:28:20.793 +07:00 [ERR] 
+erm_system
+
+2022-03-03 11:28:20.793 +07:00 [ERR] ||
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.String.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at ERM.Common.Http.LVStreamReader.ReadObject[T]()
+   at ERM.Common.Http.LVStreamReader.ReadInt16()
+   at ERM.Business.Sample.EmployeeBusiness.GetListListIdAsync(LVStreamReader requestReader, LVStreamWriter responseWriter) in C:\Users\ADMIN\Desktop\LvProjecty\ERM.Services.Sample\ERM.Business.Sample\EmployeeBusiness.cs:line 34
+   at ERM.Common.DynamicAssembly.GetTaskResult(Object obj)
+   at ERM.Common.Services.BusinessHelper.InvokeAsync(String assemblyName, String className, String methodName, LVStreamReader readerRequest, LVStreamWriter writerResponse, IDALContainer dalContainer, LVError currentError)
+   at ERM.Common.Services.ServiceBase.ExecAsync(MessageBody request)
+2022-03-03 11:28:20.891 +07:00 [INF] HTTP POST /api/Sample/exec responded 200 in 11945.1565 ms

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="ERM.DAL.EntityCore" Version="1.0.1" />
+		<PackageReference Include="ERM.Service" Version="1.0.1" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERM.Business.Sample\ERM.Business.Sample.csproj" />
+  </ItemGroup>
+
+</Project>

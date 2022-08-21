@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ERM.Common.Services" Version="1.0.1" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERM.Model.Sample\ERM.Model.Sample.csproj" />
+  </ItemGroup>
+
+</Project>
